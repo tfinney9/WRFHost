@@ -1,0 +1,3 @@
+High-Resolution WRF
+All timesteps are in local time (Mountain Daylight Time).
+Wind Height: 10 m. Simulation valid for: 2017-06-08

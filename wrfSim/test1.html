@@ -1,0 +1,44 @@
+<html>
+<head>
+	response.addHeader("Access-Control-Allow-Origin", "*");
+	<title>Leaflet</title>
+	<link rel="stylesheet" href="https://tfinney9.github.io/WRFHost/wrf/leaflet/dist/leaflet.css" />
+	<script src="https://tfinney9.github.io/WRFHost/wrf/leaflet/dist/leaflet.js"></script>
+	<!-- <link rel="stylesheet" href="http://unpkg.com/leaflet@1.0.1/dist/leaflet.css" /> -->
+	<!-- <script src="http://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script> -->
+	<script src="https://tfinney9.github.io/WRFHost/wrf/leaflet-plugins/layer/vector/KML.js"></script>
+	<!-- <script src="/home/tanner/node_modules/leaflet.ajax/dist/leaflet.ajax.min.js"></script> -->
+	<!-- <script src="/home/tanner/node_modules/leaflet-omnivore/leaflet-omnivore.js"></script> -->
+</head>
+<body>
+	<div style="width:100%; height:100%" id="map"></div>
+	<script type='text/javascript'>
+		var map = new L.Map('map', {center: new L.LatLng(58.4, -43.0), zoom: 2});
+		var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'            );
+		// var osm = new L.TileLayer('https://otile2-s.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png');
+		// var track = new L.KML("http://windninja.wfmrda.org/ninjadata/1300.kml", 			{async: true});
+		// var track = new L.KML("https://tfinney9.github.io/trombones/testDir/kml/0300.kml");
+
+		// var track = new L.KML("x.kml")
+		// track.on("loaded", function(e) {
+		// 	map.fitBounds(e.target.getBounds());
+		// 	});
+		// var truck = new L.KML("https://tfinney9.github.io/trombones/testDir/wrf/0300.kml");
+		// var truck = new L.KML("http://tfinney9.github.io/WRFHost/wrf/kml/0300.kml", 			headers:{
+    //         "Access-Control-Allow-Origin":"*",
+    //         "Access-Control-Allow-Headers":"Access-Control-Allow-Origin"});
+		var truck = new L.KML("http://weather.firelab.org/kml/1100.kml", {async: true});
+		// // omnivore.kml('http://tfinney9.github.io/WRFHost/wrf/kml/0300.kml').addTo(map)
+		// // var track = new L.KML("x.kml")
+		// truck.on("loaded", function(e) {
+		// 	map.fitBounds(e.target.getBounds());
+		// 	});
+		// omnivore.kml('https://tfinney9.github.io/WRFHost/wrf/kml/0300.kml').addTo(map)
+		map.addLayer(truck);
+		// map.addLayer(track);
+		map.addLayer(osm);
+		// map.addControl(new L.Control.Layers({}, {'Track':track}));
+		// map.addControl(new L.Control.Layers({}, {'Truck':truck}));
+	</script>
+</body>
+</html>
