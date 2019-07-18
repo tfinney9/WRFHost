@@ -48,22 +48,7 @@
       "name": "Bruno Bergot",
       "email": "bruno@eliaz.fr"
     }
-  ],
-  "dependencies": {},
-  "description": "Miscellaneous plugins for Leaflet library for services that need to display route information and need satellite imagery from different providers",
-  "devDependencies": {
-    "eslint": "2.3.0",
-    "tap": "^6.3.2"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "e12c62ccdf6f773a2724a6aa995ff22dd07f1b81",
-    "tarball": "https://registry.npmjs.org/leaflet-plugins/-/leaflet-plugins-3.0.0.tgz"
-  },
-  "gitHead": "7d27e37477898d1c07adf7bdf063f7252803403c",
-  "homepage": "https://github.com/shramov/leaflet-plugins#readme",
-  "keywords": [
-    "bing",
+
     "gpx",
     "kml",
     "leaflet",
@@ -82,15 +67,7 @@
       "email": "brunobergot@gmail.com"
     }
   ],
-  "name": "leaflet-plugins",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/shramov/leaflet-plugins.git"
-  },
-  "scripts": {
-    "test": "tap control/test/*.js && eslint --config .eslintrc control/* layer/*"
+  "scripts": {https://www.google.com/search?q=nis+elements+br+tiff&client=firefox-b-1-d&ei=8NswXYyHNsP3-gTVv7y4DQ&start=10&sa=N&ved=0ahUKEwiMv6HArL_jAhXDu54KHdUfD9cQ8NMDCIUB&biw=853&bih=614
   },
   "version": "3.0.0"
 }
